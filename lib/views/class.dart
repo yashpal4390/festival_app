@@ -1,12 +1,17 @@
+// ignore_for_file: prefer_const_constructors
+
+import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
 
 class Festival
 {
   int bgindex=0;
+  int indexofdow=-1;
   String? wish;
   String? name;
 
-
+  Uint8List? asUint8List;
   double sliderVal = 0;
   double sliderVal1 = 0;
 
