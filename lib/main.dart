@@ -18,8 +18,6 @@ class MyApp extends StatelessWidget {
       ValueNotifier(ThemeMode.light);
 
   const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder<ThemeMode>(
@@ -83,7 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
             return Column(
               children: [
                 if (fest.asUint8List != null)
-                  Image.memory(fest.asUint8List!, height: 500, width: 400),
+                  Image.memory(dow[index], height: 500, width: 400),
                 if (fest.asUint8List == null)
                   Container(
                     margin: EdgeInsets.all(16),

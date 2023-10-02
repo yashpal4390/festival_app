@@ -55,11 +55,11 @@ class _ShareScreenState extends State<ShareScreen> {
 
 
               Navigator.pushNamed(context, home_screen);
-              // dow.add(fest.asUint8List!);
-              // fest.indexofdow++;
-              // print(dow.length);
-              // print(dow);
-              // print(fest.indexofdow);
+              dow.add(fest.asUint8List!);
+
+              print(dow.length);
+              print(dow);
+
               setState(() {
 
               });

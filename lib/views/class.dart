@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 class Festival
 {
   int bgindex=0;
-  int indexofdow=-1;
+
   String? wish;
   String? name;
 
