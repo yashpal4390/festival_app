@@ -80,23 +80,24 @@ class _MyHomePageState extends State<MyHomePage> {
           itemBuilder: (context, index) {
             return Column(
               children: [
+                if(dow.length==0) Text("Create"),
                 if (fest.asUint8List != null)
                   Image.memory(dow[index], height: 500, width: 400),
-                if (fest.asUint8List == null)
-                  Container(
-                    margin: EdgeInsets.all(16),
-                    padding: EdgeInsets.all(16),
-                    height: 290,
-                    width: 400,
-                    color: Colors.amber,
-                    child: Center(
-                        child: Text(
-                            "Click On the + Button To Create A New Post",
-                            style: TextStyle(
-                                fontSize: 20,
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold))),
-                  ),
+                //
+                //   Container(
+                //     margin: EdgeInsets.all(16),
+                //     padding: EdgeInsets.all(16),
+                //     height: 290,
+                //     width: 400,
+                //     color: Colors.amber,
+                //     child: Center(
+                //         child: Text(
+                //             "Click On the + Button To Create A New Post",
+                //             style: TextStyle(
+                //                 fontSize: 20,
+                //                 color: Colors.black,
+                //                 fontWeight: FontWeight.bold))),
+                //   ),
                 // if (fest.asUint8List != null) Image.memory(dow[fest.indexofdow],height: 500,width: 400),
               ],
             );
